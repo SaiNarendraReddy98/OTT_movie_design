@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Movies Design</title>
+	<link rel="stylesheet" type="text/css" href="../MDB/css/bootstrap.css"> 
+	<link rel="stylesheet" type="text/css" href="../MDB/css/mdb.css">
+	<link rel="stylesheet" type="text/css" href="../FA/fontawesome/css/all.css">
+	<style>
+		.landing-page{
+			background-color: black;
+			background:url("../IMAGES/GODS/redimage.jpg");
+			background-size: cover;
+			height: 100vh;
+		 }
+	.featured-title
+	   {
+	     margin-top: 40px;
+		 width: 300px;
+	   }
+	 .featured-desc
+	   {
+		width: 500px;
+		color: lightgray;
+		margin: 30px 0;
+	   }
+	.featured-button
+	  {
+		background-color: #4dbf00;
+		color: white;
+		padding: 10px 20px;
+		border-radius: 10px;
+		border: none;
+		outline: none;
+		font-weight: bold;
+	  } 
+	  .movie-list-container{
+	  	padding: 0 20px;
+	  }
+	  .movie-list-wrapper{
+	  	position: relative;
+	  }
+	  .movie-list
+	{
+		display: flex;
+		align-items: center;
+		height: 300px;
+	}
+	.movie-list-item
+	{
+		margin-right: 30px;
+		position: relative;
+	}
+	.movie-list-item:hover .movie-list-item-img
+	{
+		transform: scale(1.2);
+		margin: 0 30px;
+		opacity: 0.5;
+	}
+	.movie-list-item:hover .movie-list-item-title,
+	.movie-list-item:hover .movie-list-item-desc,
+	.movie-list-item:hover .movie-list-item-button
+	{
+		opacity: 1;
+	}
+	.movie-list-item-img
+	{
+		width: 270px;
+		height: 200px;
+		transition: all 1s ease-in-out;		
+	}
+	.movie-list-item-title
+	{
+		background-color: #333;
+		padding: 0 10px;
+		font-size: 32px;
+		font-weight: bold;
+		position: absolute;
+		top: 10%;
+		left: 50px;
+		opacity: 0;
+		transition: 1s all ease-in-out;
+	}
+	.movie-list-item-desc
+	{
+		background-color: #333;
+		padding: 10px;
+		font-size: 14px;
+		position: absolute;
+		top: 10%;
+		left: 50px;
+		width: 230px;
+		opacity: 0;
+		transition: 1s all ease-in-out;
+
+	}
+	.movie-list-item-button
+	{
+		padding: 10px;
+		background-color: #4dbf00;
+		color: white;
+		border-radius: 10px;
+		outline: none;
+		border: none;
+		cursor: pointer;
+		position: absolute;
+		bottom: 20px;
+		left: 50px;
+		opacity: 0;
+		transition: 1s all ease-in-out;
+	}
+	.title{
+		margin-top: 10px;
+	}
+	</style>
+</head>
+<body>
+	 <div class="navbar bg-dark navbar-dark navbar-expand-sm">
+		<div class="container-fluid">
+			<h1 class="text-success">Movies World</h1>
+		 <button class="navbar-toggler" data-target="#links" data-toggle="collapse">
+		 <span class="navbar-toggler-icon"></span>
+		 </button>
+		 <div class="collapse navbar-collapse" id="links"> 
+		 	<ul class="navbar-nav ml-auto">
+		 		<li class="nav-items"><a href="" class="nav-link text-white">Home</a></li>
+		 		<li class="nav-items"><a href="" class="nav-link text-white">Movies</a></li>
+		 	    <li class="nav-items"><a href="" class="nav-link text-white">Series</a></li>
+		 	    <li class="nav-items"><a href="" class="nav-link text-white">Popular</a></li>
+		 	    <li class="nav-items"><a href="" class="nav-link text-white">Trends</a></li>
+		 	</ul>
+		 </div>	
+	<div class="dropdown">
+       <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" data-toggle="dropdown" aria-expanded="false">
+         Profile
+       </button>
+       <div class="dropdown-menu">
+       <a class="dropdown-item" href="">Personal info</a>
+       </div>
+       <div class="sidebar"></div>
+  </div>
+ </div>
+ </div>
+</div>
+
+<!-- <div class="sidebar"> -->
+		<!-- <i class="left-menu-icon fa-solid fa-house"></i> -->
+		<!-- <i class="left-menu-icon fa-solid fa-magnifying-glass"></i> -->
+		<!-- <i class="left-menu-icon fa-solid fa-users"></i> -->
+		<i class="left-menu-icon fa-solid fa-bookmark"></i>
+		<i class="left-menu-icon fa-solid fa-tv"></i>
+		<i class="left-menu-icon fa-solid fa-hourglass"></i>
+		<i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+	<!-- </div> -->
+
+
+<div class="landing-page">
+	<img class="featured-title" src="D:\IMAGES\GODS\2django.png">
+	<p class="featured-desc">“The whole of life is just like watching a film. Only it's as though you always get in ten minutes after the big picture has started, and no-one will tell you the plot, so you have to work it out all yourself from the clues.”
+  </p>
+	<button class="featured-button">WATCH</button>
+	
+<div class="movie-list-container">
+	<h1 class="title text-white">New Releases</h1>
+	 <div class="movie-list-wrapper">
+		<div class="movie-list">
+			<div class="movie-list-item">
+				<img class="movie-list-item-img" src="D:\IMAGES\GODS\movieimg.jpg">
+				<p class="movie-list-item-desc text-white">Best entertain with good quality sound and effects. with 3D animation with 4multi languages</p>
+				<button class="movie-list-item-button">Watch</button>
+			</div>
+			<div class="movie-list-item">
+				<img class="movie-list-item-img" src="D:\IMAGES\GODS\movie2img.jpg">
+				<p class="movie-list-item-desc text-white">Best entertain with good quality sound and effects. with 3D animation with 4multi languages</p>
+				<button class="movie-list-item-button">Watch</button>
+			</div>
+			<div class="movie-list-item">
+				<img class="movie-list-item-img" src="D:\IMAGES\GODS\movieimg.jpg">
+				<p class="movie-list-item-desc text-white">Best entertain with good quality sound and effects. with 3D animation with 4multi languages</p>
+				<button class="movie-list-item-button">Watch</button>
+			</div>
+			<div class="movie-list-item">
+				<img class="movie-list-item-img" src="D:\IMAGES\GODS\movie2img.jpg">
+				<p class="movie-list-item-desc text-white">Best entertain with good quality sound and effects. with 3D animation with 4multi languages</p>
+				<button class="movie-list-item-button">Watch</button>
+			</div>
+		</div>
+	 </div>
+</div>
+</div>
+</body>
+</html>      
+
+
+
+   
+ 
